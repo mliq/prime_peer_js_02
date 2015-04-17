@@ -1,0 +1,23 @@
+#results {
+	text-align: center;
+	padding: 30px;
+	font-size: 32px;
+	color: #07AA9E;
+	font-family: Impact, Charcoal, sans-serif;
+
+	margin: 5px auto 5px auto;
+	border: 5px solid black;
+	border-radius: 20px;
+	height: auto;
+	width: auto;
+	/*background-color: #337277;*/
+	background-image: url("bat_cat.png");
+}
+
+#batCat {
+	display: block;
+	height: 400px;
+	width: 375px;
+	margin: 5px auto 5px auto;
+	border-radius: 20px;
+}
