@@ -27,14 +27,20 @@ function Person (customerId, areaCode, numberOfPizza, numberOfRanch){
 	this.print = function(){
 		console.log("Customer ID: " + this.customerId + "\nArea Code: " + this.areaCode + "\nCity: " + this.city + "\nNumber of Pizza: " + this.numberOfPizza + "\nNumber of Ranch: " + this.numberOfRanch + "\nRating: " + this.rating());
 	}
+
+  this.html = "Customer ID: " + this.customerId + "\nArea Code: " + this.areaCode + "\nCity: " + this.city + "\nNumber of Pizza: " + this.numberOfPizza + "\nNumber of Ranch: " + this.numberOfRanch + "\nRating: " + this.rating();
+
 }
 
 var i = 0;
 var people = [];
 
+var x = document.getElementById("results");
+
 for(i; i < 20; i++){
 	people[i] = new Person(randomNumber(1000,4000),randomNumber(1,3),randomNumber(5,10),randomNumber(1,5));
 	people[i].print();
+  x.innerHTML += people[i].html+"<br><br>";
 }
 
 function randomNumber(min, max) {
